@@ -1,0 +1,68 @@
+<div class="container border" style="border-radius: 15px; background-color: #212529">
+    <div class="row">
+
+        <p></p>
+
+        <!-- title "Criar Conta" -->
+        <h2 class="text-white text-center" style="margin-left: 15px;">Criar Conta</h2>
+    </div>
+
+    <p></p>
+
+    <form class="was-validated" style="margin-left: 15px; text-align:center;">
+
+        <!-- nome -->
+        <div class="form-group text-center">
+            <label for="exampleInputName1" class="text-white">Nome</label>
+            <input required type="name" class="form-control w-50 center-input" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Introduza o seu Nome">
+  
+            <div class="invalid-feedback">Por favor introduz o seu nome.</div>
+        </div>
+
+        <br>
+
+        <!-- email -->
+        <div class="form-group text-center">
+          <label for="exampleInputEmail1" class="text-white">Email</label>
+          <input required onblur="checkValidity('email', '@', 'Email Inválido inserido');" type="email" class="form-control w-50 center-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduza o seu email">
+
+          <div class="invalid-feedback">Por favor introduz o seu email.</div>
+        </div>
+
+        <br>
+
+        <!-- password -->
+        <div class="form-group text-center">
+          <label for="exampleInputPassword1" class="text-white">Palavra Passe</label>
+          <input required onblur="checkValidity('password', ' ', 'Palavra Passe Inválida inserida');" type="password" class="form-control w-50 center-input" id="exampleInputPassword1" placeholder="Introduza a sua Palavra Passe">
+        
+          <small id="passwordHelp" class="form-text text-muted">Mínimo: 6 caracteres.</small>
+
+          <div class="invalid-feedback">Por favor introduz a tua palavra-passe.</div>
+        </div>
+
+        <p></p>
+
+        <!-- confirm password -->
+        <div class="form-group text-center">
+            <label for="exampleInputPassword2" class="text-white">Confirmar Palavra Passe</label>
+            <input required onblur="checkValidity('password', ' ', 'Palavra Passe Inválida inserida');" type="password" class="form-control w-50 center-input" id="exampleInputPassword2" placeholder="Introduza a sua Palavra Passe">
+          
+            <small id="passwordHelp" class="form-text text-muted">Mínimo: 6 caracteres.</small>
+  
+            <div class="invalid-feedback">Por favor introduz a tua palavra-passe.</div>
+        </div>
+
+        <p></p>
+
+        <button routerLink="/homepage" type="submit" class="btn btn-danger">Criar Conta</button>
+
+        <p></p>
+
+        <div class="form-group text-center">
+            <label class="text-white">Já tem uma conta?</label><label>‎‎‎‏‏‎ ‎‏‏‎ ‎</label><a routerLink="/iniciarsessao">Inicie Sessão</a>
+        </div>
+      </form>
+
+      <p></p>
+</div>
