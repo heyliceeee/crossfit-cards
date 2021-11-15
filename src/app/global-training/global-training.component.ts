@@ -18,6 +18,10 @@ export class GlobalTrainingComponent implements OnInit {
     i = Math.floor(Math.random()*images.length);
 
     $('.global-cards').append("<img src='"+path+images[i]+"'>").hide().fadeIn(2000);
+
+    $('button').click(function(){
+      alert('hi');
+    });
     
   }
 
