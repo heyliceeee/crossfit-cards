@@ -8,6 +8,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { SigninComponent } from './signin/signin.component';
 import { RegisterComponent } from './register/register.component';
 import { TrainingHomepageComponent } from './training-homepage/training-homepage.component';
+import { GlobalTrainingComponent } from './global-training/global-training.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TrainingHomepageComponent } from './training-homepage/training-homepage
     HomepageComponent,
     SigninComponent,
     RegisterComponent,
-    TrainingHomepageComponent
+    TrainingHomepageComponent,
+    GlobalTrainingComponent
   ],
   imports: [
     BrowserModule,
