@@ -13,9 +13,9 @@ export class GlobalTrainingComponent implements OnInit {
 
   ngOnInit(): void {
 
-    var path = 'https://cdn3.iconfinder.com/data/icons/card-games-colored/48/';
-    var images = ['Games_CardGames_Artboard_64-512.png', 'Games_CardGames_Artboard_79-512.png'];
-    var i = Math.floor(Math.random()*images.length);
+    var path = 'https://cdn3.iconfinder.com/data/icons/card-games-colored/48/',
+    images = ['Games_CardGames_Artboard_64-512.png', 'Games_CardGames_Artboard_79-512.png'],
+    i = Math.floor(Math.random()*images.length);
 
     $('.global-cards').append("<img src='"+path+images[i]+"'>").hide().fadeIn(2000);
     
