@@ -14,13 +14,24 @@ export class GlobalTrainingComponent implements OnInit {
 
     $(document).ready(function(){
 
-      alert('jquery instalado');
+      var path = '../assets/cards/',
+        images = ['2clubs.png', '2diamond.png', '2heart.png', '2spades.png', 
+        '3clubs.png', '3diamond.png', '3heart.png', '3spades.png',
+        '4clubs.png', '4diamond.png', '4heart.png', '4spades.png',
+        '5clubs.png', '5diamond.png', '5heart.png', '5spades.png', 
+        '6clubs.png', '6diamond.png', '6heart.png', '6spades.png', 
+        '7clubs.png', '7diamond.png', '7heart.png', '7spades.png', 
+        '8clubs.png', '8diamond.png', '8heart.png', '8spades.png', 
+        '9clubs.png', '9diamond.png', '9heart.png', '9spades.png', 
+        '10clubs.png', '10diamond.png', '10heart.png', '10spades.png', 
+        'aclubs.png', 'adiamond.png', 'aheart.png', 'aspades.png',
+        'jackclub.png', 'jackdiamond.png', 'jackheart.png', 'jackspades.png', 
+        'kingclub.png', 'kingdiamond.png', 'kingheart.png', 'kingspades.png', 
+        'queenclubs.png', 'queendiamond.png', 'queenheart.png', 'queenspades.png',
+      ],
+        i = Math.floor(Math.random()*images.length);
 
-      var path = 'https://cdn3.iconfinder.com/data/icons/card-games-colored/48/',
-    images = ['Games_CardGames_Artboard_64-512.png', 'Games_CardGames_Artboard_79-512.png'],
-    i = Math.floor(Math.random()*images.length);
-
-    $('.global-cards').append("<img src='"+path+images[i]+"'>").hide().fadeIn(2000);
+      $('.global-cards').append("<img src='"+path+images[i]+"'>").hide().fadeIn(2000);
     });
   }
 }
