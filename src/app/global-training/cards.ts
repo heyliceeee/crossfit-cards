@@ -1,6 +1,8 @@
 export class CardTip {
-    path: string;
-    images: object;
-    tips: object;
-    score: object;
+    path: string = "";
+    card: object = [{
+        image: string = "",
+        tips: string = '',
+        score: number = 0
+    }];
 }
