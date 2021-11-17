@@ -1,23 +1,22 @@
-<div class="col" *ngFor="let cardglobal of cardTips; let ncartas = index;">
 <!-- container "game" -->
-<div class="container-fluid border" *ngIf="ncartas < 1" style="border-radius: 15px; background-color: #212529">
+<div class="container-fluid border" style="border-radius: 15px; background-color: #212529">
     <div class="row justify-content-between">
 
         <p></p>
 
         <!-- Time -->
         <div class="col align-self-start" style="margin-left: 5px;">
-            <h1 class="text-white time" >Time: </h1>
+            <h1 class="text-white" >Time: 02:14</h1>
         </div>
 
         <!-- tip -->
         <div class="col text-center" style="margin-left: 5px;">
-            <h2 class="text-white tip-global-cards">Tip: {{cardglobal.tip}}</h2>
+            <h3 class="text-white">Tip: jumping jack 13 reps</h3>
         </div>
 
         <!-- Time break -->
         <div class="col text-end" style="margin-right: 5px;">
-            <h2 class="text-white time-break">Time Break: </h2>
+            <h2 class="text-white">Time Break: 01:00</h2>
         </div>
     </div>
 
@@ -28,12 +27,12 @@
         <!-- score -->
         <div class="col align-self-start" style="margin-left: 5px;">
             <div class="row"> 
-                <h3 class="text-white score">Score: {{cardglobal.score}}</h3>
+                <h3 class="text-white">Score: 40</h3>
             </div>
         </div>
 
         <!-- cards -->
-        <div class="col text-center image-global-cards" style="margin-left: 5px;"><img [src] = 'cardglobal.image'></div>
+        <div class="col text-center global-cards" style="margin-left: 5px;"></div>
 
         <!-- pause -->
         <div class="col text-end" style="margin-right: 5px;">
@@ -50,12 +49,8 @@
 
         <!-- button next -->
         <div class="col text-end" style="margin-right: 5px;">
-            <button (click)="nextCard()" tabindex="290" class="btn btn-danger" type="button"><i class="fas fa-chevron-right fa-3x" style="color: white;"></i></button>
+            <button tabindex="290" class="btn btn-danger" type="button"><i class="fas fa-chevron-right fa-3x" style="color: white;"></i></button>
         </div>
         <p></p>
     </div>
 </div>
-</div>
-
-
-
