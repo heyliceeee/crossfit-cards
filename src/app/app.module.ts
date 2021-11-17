@@ -10,6 +10,8 @@ import { RegisterComponent } from './register/register.component';
 import { TrainingHomepageComponent } from './training-homepage/training-homepage.component';
 import { GlobalTrainingComponent } from './global-training/global-training.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
