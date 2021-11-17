@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import { Timer, Time, TimerOptions } from 'timer-node';
 import { CardTip } from './cards'
-import { CARDTIPS } from './mocks';
+import { CARDGLOBAL } from './mocks';
 
 
 
@@ -18,19 +18,15 @@ export class GlobalTrainingComponent implements OnInit {
 
 
   ngOnInit() {
-    this.cardTips = CARDTIPS;
+    this.cardTips = CARDGLOBAL;
 
-    $(window).ready(function(){
+    var i = Math.floor(Math.random()* 53);
 
-      cardTip();
+    console.log(CARDGLOBAL);
 
+    /* $(window).ready(function(){
 
-      $("#btn-next").click(function(){
-
-        var score = 30
-
-        $('.score').append(""+score);
-      });
+      //cardTip();
 
       function cardTip() {
        /*  var path = '../assets/cards/';
@@ -67,10 +63,20 @@ export class GlobalTrainingComponent implements OnInit {
 /* 
         $('.global-cards').append("<img src='"+path+images[i]+"'>").hide().fadeIn(2000);
         $('.tip-global-cards').append("Tip: "+tips[i]); */
-      }
-    });
-
-    
-
+    //});
   }
-}
+  
+  nextCard(){
+      var i = Math.floor(Math.random()* 53);
+
+      
+
+      //$('.image-global-cards').append(CARDGLOBAL[i].image)
+      $('.tip-global-cards').append(CARDGLOBAL[i].tip);
+
+
+      console.log(i);
+      console.log(CARDGLOBAL[i].tip);
+      //console.log("<img [src] = '"+CARDGLOBAL[i].image+"' >");
+  }
+} 

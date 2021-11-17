@@ -9,7 +9,7 @@ import { SigninComponent } from './signin/signin.component';
 import { RegisterComponent } from './register/register.component';
 import { TrainingHomepageComponent } from './training-homepage/training-homepage.component';
 import { GlobalTrainingComponent } from './global-training/global-training.component';
-
+import { HttpClientModule } from '@angular/common/http'
 
 
 @NgModule({
@@ -25,7 +25,8 @@ import { GlobalTrainingComponent } from './global-training/global-training.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

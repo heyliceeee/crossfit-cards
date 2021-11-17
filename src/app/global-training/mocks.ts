@@ -1,6 +1,6 @@
 import { CardTip } from "./cards";
 
-export const CARDTIPS: CardTip[] = [{
+export const CARDGLOBAL: CardTip[] = [{
     "image": "../assets/cards/2clubs.png",
       "tip": "squats 2 reps",
       "score": 4
