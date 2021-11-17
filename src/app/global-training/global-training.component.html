@@ -1,6 +1,7 @@
+<div class="col" *ngFor="let card of cardTips; let i = index">
 <!-- container "game" -->
-<div class="container-fluid border" *ngFor="let cardTip of cardTips; let i = index" style="border-radius: 15px; background-color: #212529">
-    <div class="row justify-content-between" *ngIf="i < 1">
+<div class="container-fluid border" *ngIf="i < 1" style="border-radius: 15px; background-color: #212529">
+    <div class="row justify-content-between">
 
         <p></p>
 
@@ -11,7 +12,7 @@
 
         <!-- tip -->
         <div class="col text-center" style="margin-left: 5px;">
-            <h2 class="text-white tip-global-cards">Tip: {{cardTip.tips}}</h2>
+            <h2 class="text-white tip-global-cards">Tip: {{card.tip}}</h2>
         </div>
 
         <!-- Time break -->
@@ -27,12 +28,12 @@
         <!-- score -->
         <div class="col align-self-start" style="margin-left: 5px;">
             <div class="row"> 
-                <h3 class="text-white score">Score: 0</h3>
+                <h3 class="text-white score">Score: {{card.score}}</h3>
             </div>
         </div>
 
         <!-- cards -->
-        <div class="col text-center global-cards" style="margin-left: 5px;"></div>
+        <div class="col text-center global-cards" style="margin-left: 5px;"><img [src] = "card.image"></div>
 
         <!-- pause -->
         <div class="col text-end" style="margin-right: 5px;">
@@ -54,5 +55,7 @@
         <p></p>
     </div>
 </div>
+</div>
+
 
 
