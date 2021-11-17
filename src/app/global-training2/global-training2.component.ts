@@ -1,20 +1,13 @@
-import { createDirectiveTypeParams } from '@angular/compiler/src/render3/view/compiler';
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
-import { Timer, Time, TimerOptions } from 'timer-node';
-import { CardTip } from './cards'
-import { CARDGLOBAL } from './mocks';
-
 
 @Component({
-  selector: 'app-global-training',
-  templateUrl: './global-training.component.html',
-  styleUrls: ['./global-training.component.css']
+  selector: 'app-global-training2',
+  templateUrl: './global-training2.component.html',
+  styleUrls: ['./global-training2.component.css']
 })
-export class GlobalTrainingComponent implements OnInit {
+export class GlobalTraining2Component implements OnInit {
 
-  cardTips: CardTip[] = [];
-
+  constructor() { }
 
   ngOnInit(): void {
 
@@ -73,17 +66,8 @@ export class GlobalTrainingComponent implements OnInit {
 
       $('.image-global-cards').append("<img src='"+path+images[i]+"'>").hide().fadeIn(2000);
       $('.tip-global-cards').append("Tip: "+tips[i]);
-    
-    
-      $('#test').click(function() {
-        $(this).find('i').toggleClass('fa-volume-up').toggleClass('fa-volume-off');
-      });
-
-
+      $('.score-global-cards').append("Score: "+score[i]);
     });
   }
 
-  nextCard(){
-    var timeGame = document.getElementById;
-  }
 }
