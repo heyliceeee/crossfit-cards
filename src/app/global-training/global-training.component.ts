@@ -10,9 +10,21 @@ export class GlobalTrainingComponent implements OnInit {
 
   constructor() { }
 
+
+  cardImages = [{
+    "path": "../assets/cards/",
+    "2clubs": [
+      {"tip": "aaa", "img": "2clubs.png"}
+    ]
+  }]
+
+
+
   ngOnInit(): void {
 
     $(document).ready(function(){
+
+      
 
       var path = '../assets/cards/',
         images = ['2clubs.png', '2diamond.png', '2heart.png', '2spades.png', 
@@ -28,10 +40,27 @@ export class GlobalTrainingComponent implements OnInit {
         'jackclub.png', 'jackdiamond.png', 'jackheart.png', 'jackspades.png', 
         'kingclub.png', 'kingdiamond.png', 'kingheart.png', 'kingspades.png', 
         'queenclubs.png', 'queendiamond.png', 'queenheart.png', 'queenspades.png',
-      ],
+      'joker.png'],
+
+        tips = ['squats 2 reps', 'jumping jacks 2 reps', 'sit-ups 2 reps', 'push up 2 reps',
+        'squats 3 reps', 'jumping jacks 3 reps', 'sit-ups 3 reps', 'push up 3 reps',
+        'squats 4 reps', 'jumping jacks 4 reps', 'sit-ups 4 reps', 'push up 4 reps',
+        'squats 5 reps', 'jumping jacks 5 reps', 'sit-ups 5 reps', 'push up 5 reps',
+        'squats 6 reps', 'jumping jacks 6 reps', 'sit-ups 6 reps', 'push up 6 reps',
+        'squats 7 reps', 'jumping jacks 7 reps', 'sit-ups 7 reps', 'push up 7 reps',
+        'squats 8 reps', 'jumping jacks 8 reps', 'sit-ups 8 reps', 'push up 8 reps',
+        'squats 9 reps', 'jumping jacks 9 reps', 'sit-ups 9 reps', 'push up 9 reps',
+        'squats 10 reps', 'jumping jacks 10 reps', 'sit-ups 10 reps', 'push up 10 reps',
+        'squats 20 reps', 'jumping jacks 20 reps', 'sit-ups 20 reps', 'push up 20 reps',
+        'squats 11 reps', 'jumping jacks 11 reps', 'sit-ups 11 reps', 'push up 11 reps',
+        'squats 13 reps', 'jumping jacks 13 reps', 'sit-ups 13 reps', 'push up 13 reps',
+        'squats 12 reps', 'jumping jacks 12 reps', 'sit-ups 12 reps', 'push up 12 reps',
+      'last exercise 30 reps'],
+
         i = Math.floor(Math.random()*images.length);
 
       $('.global-cards').append("<img src='"+path+images[i]+"'>").hide().fadeIn(2000);
+      $('.tip-global-cards').append("Tip: "+tips[i]);
     });
   }
 }
