@@ -1,6 +1,9 @@
+import { createDirectiveTypeParams } from '@angular/compiler/src/render3/view/compiler';
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import { Timer, Time, TimerOptions } from 'timer-node';
+import { CardTip } from './cards'
+import { CARDTIPS } from './mocks';
 
 
 
@@ -11,16 +14,26 @@ import { Timer, Time, TimerOptions } from 'timer-node';
 })
 export class GlobalTrainingComponent implements OnInit {
 
-  constructor() { }
+  cardTips: CardTip[] = [];
 
-  ngOnInit(): void {
+
+  ngOnInit() {
+    this.cardTips = CARDTIPS;
 
     $(window).ready(function(){
 
       cardTip();
 
+
+      $("#btn-next").click(function(){
+
+        var score = 30
+
+        $('.score').append(""+score);
+      });
+
       function cardTip() {
-        var path = '../assets/cards/';
+       /*  var path = '../assets/cards/';
         var images = ['2clubs.png', '2diamond.png', '2heart.png', '2spades.png', 
         '3clubs.png', '3diamond.png', '3heart.png', '3spades.png',
         '4clubs.png', '4diamond.png', '4heart.png', '4spades.png',
@@ -48,19 +61,16 @@ export class GlobalTrainingComponent implements OnInit {
       'squats 11 reps', 'jumping jacks 11 reps', 'sit-ups 11 reps', 'push up 11 reps',
       'squats 13 reps', 'jumping jacks 13 reps', 'sit-ups 13 reps', 'push up 13 reps',
       'squats 12 reps', 'jumping jacks 12 reps', 'sit-ups 12 reps', 'push up 12 reps',
-    'last exercise 30 reps'];
+      'last exercise 30 reps']; */
 
-        var i = Math.floor(Math.random()*images.length);
-
+        //var i = Math.floor(Math.random()*images.length);
+/* 
         $('.global-cards').append("<img src='"+path+images[i]+"'>").hide().fadeIn(2000);
-        $('.tip-global-cards').append("Tip: "+tips[i]);
+        $('.tip-global-cards').append("Tip: "+tips[i]); */
       }
-
-        
-
-      
     });
 
+    
 
   }
 }

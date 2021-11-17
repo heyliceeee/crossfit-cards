@@ -1,17 +1,17 @@
 <!-- container "game" -->
-<div class="container-fluid border" style="border-radius: 15px; background-color: #212529">
+<div class="container-fluid border" *ngFor="let cardTip of cardTips" style="border-radius: 15px; background-color: #212529">
     <div class="row justify-content-between">
 
         <p></p>
 
         <!-- Time -->
         <div class="col align-self-start" style="margin-left: 5px;">
-            <h1 class="text-white time" >Time: 02:14</h1>
+            <h1 class="text-white time" >Time: </h1>
         </div>
 
         <!-- tip -->
         <div class="col text-center" style="margin-left: 5px;">
-            <h2 class="text-white tip-global-cards"></h2>
+            <h2 class="text-white tip-global-cards">{{cardTip.tips}}</h2>
         </div>
 
         <!-- Time break -->
@@ -27,7 +27,7 @@
         <!-- score -->
         <div class="col align-self-start" style="margin-left: 5px;">
             <div class="row"> 
-                <h3 class="text-white">Score: 40</h3>
+                <h3 class="text-white score">Score: 0</h3>
             </div>
         </div>
 
@@ -49,7 +49,7 @@
 
         <!-- button next -->
         <div class="col text-end" style="margin-right: 5px;">
-            <button tabindex="290" class="btn btn-danger" type="button"><i class="fas fa-chevron-right fa-3x" style="color: white;"></i></button>
+            <button id="btn-next" tabindex="290" class="btn btn-danger" type="button"><i class="fas fa-chevron-right fa-3x" style="color: white;"></i></button>
         </div>
         <p></p>
     </div>
