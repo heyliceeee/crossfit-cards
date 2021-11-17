@@ -1,9 +1,9 @@
 import { createDirectiveTypeParams } from '@angular/compiler/src/render3/view/compiler';
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import { Timer, Time, TimerOptions } from 'timer-node';
 import { CardTip } from './cards'
 import { CARDGLOBAL } from './mocks';
+import { Timer } from 'easytimer.js';
 
 
 @Component({
@@ -14,7 +14,6 @@ import { CARDGLOBAL } from './mocks';
 export class GlobalTrainingComponent implements OnInit {
 
   cardTips: CardTip[] = [];
-
 
   ngOnInit(): void {
 
@@ -73,17 +72,46 @@ export class GlobalTrainingComponent implements OnInit {
 
       $('.image-global-cards').append("<img src='"+path+images[i]+"'>").hide().fadeIn(2000);
       $('.tip-global-cards').append("Tip: "+tips[i]);
-    
-    
-      $('#test').click(function() {
-        $(this).find('i').toggleClass('fa-volume-up').toggleClass('fa-volume-off');
+
+
+
+      const timerGame = new Timer();
+
+      timerGame.start();
+
+      timerGame.addEventListener('secondsUpdated', function (e) {
+        $('#time-game').html(timerGame.getTimeValues().toString());
       });
 
 
-    });
+      const timerBreak = new Timer();
+
+      $('#play').click(function () {
+        timerBreak.start();
+        timerGame.pause();
+      });
+
+
+      $('#pause').click(function () {
+        timerBreak.pause();
+        timerGame.start();
+      });
+
+      timerBreak.addEventListener('secondsUpdated', function (e) {
+        $('#time-break').html(timerBreak.getTimeValues().toString());
+      });
+  
+      timerBreak.addEventListener('started', function (e) {
+          $('#time-break').html(timerBreak.getTimeValues().toString());
+      });
+
+  });
   }
 
   nextCard(){
     var timeGame = document.getElementById;
   }
+
+
+  
 }
