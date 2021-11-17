@@ -80,7 +80,7 @@ export class GlobalTrainingComponent implements OnInit {
       timerGame.start();
 
       timerGame.addEventListener('secondsUpdated', function (e) {
-        $('#time-game').html(timerGame.getTimeValues().toString());
+        $('#time-game').html('Time: ' + timerGame.getTimeValues().toString());
       });
 
 
@@ -89,12 +89,16 @@ export class GlobalTrainingComponent implements OnInit {
       $('#play').click(function () {
         timerBreak.start();
         timerGame.pause();
+
+        var tempoJogo = timerGame.getTimeValues().toString();
       });
 
 
       $('#pause').click(function () {
         timerBreak.pause();
         timerGame.start();
+
+        var tempoDescansoJogo = timerBreak.getTimeValues().toString();
       });
 
       timerBreak.addEventListener('secondsUpdated', function (e) {
@@ -105,6 +109,10 @@ export class GlobalTrainingComponent implements OnInit {
           $('#time-break').html(timerBreak.getTimeValues().toString());
       });
 
+
+        
+
+        
   });
   }
 
