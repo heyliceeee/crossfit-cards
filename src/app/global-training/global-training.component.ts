@@ -74,7 +74,7 @@ export class GlobalTrainingComponent implements OnInit {
       $('.tip-global-cards').append("Tip: "+tips[i]);
 
 
-
+      //time and time break
       const timerGame = new Timer();
 
       timerGame.start();
@@ -90,7 +90,8 @@ export class GlobalTrainingComponent implements OnInit {
         timerBreak.start();
         timerGame.pause();
 
-        var tempoJogo = timerGame.getTimeValues().toString();
+        var resultTimerGame = timerGame.getTimeValues().toString();
+        console.log(resultTimerGame);
       });
 
 
@@ -98,7 +99,8 @@ export class GlobalTrainingComponent implements OnInit {
         timerBreak.pause();
         timerGame.start();
 
-        var tempoDescansoJogo = timerBreak.getTimeValues().toString();
+        var resultTimerBreak = timerBreak.getTimeValues().toString();
+        console.log(resultTimerBreak);
       });
 
       timerBreak.addEventListener('secondsUpdated', function (e) {
@@ -108,18 +110,19 @@ export class GlobalTrainingComponent implements OnInit {
       timerBreak.addEventListener('started', function (e) {
           $('#time-break').html(timerBreak.getTimeValues().toString());
       });
+      //end time and time break
 
 
+      //when click nextCard button 
+      $("#nextCard").click(function (){
+        timerGame.pause();
         
+        var resultTimeGameNextCard = timerGame.getTimeValues().toString(); 
+        console.log(resultTimeGameNextCard);
+      });
 
         
   });
   }
-
-  nextCard(){
-    var timeGame = document.getElementById;
-  }
-
-
   
 }
