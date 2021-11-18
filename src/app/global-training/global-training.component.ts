@@ -67,7 +67,7 @@ export class GlobalTrainingComponent implements OnInit {
         60
       ],
 
-        i = Math.floor(Math.random()*images.length);
+      i = Math.floor(Math.random()*images.length);
 
 
       $('.image-global-cards').append("<img src='"+path+images[i]+"'>").hide().fadeIn(2000);
@@ -116,9 +116,13 @@ export class GlobalTrainingComponent implements OnInit {
       //when click nextCard button 
       $("#nextCard").click(function (){
         timerGame.pause();
+        timerBreak.pause();
         
-        var resultTimeGameNextCard = timerGame.getTimeValues().toString(); 
+        var resultTimeGameNextCard = timerGame.getTimeValues().toString();
+        var resultTimeBreakNextCard = timerBreak.getTimeValues().toString(); 
+
         console.log(resultTimeGameNextCard);
+        console.log(resultTimeBreakNextCard);
       });
 
         
