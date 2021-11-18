@@ -6,11 +6,11 @@
 
         <!-- Time -->
         <div class="col align-self-start" style="margin-left: 5px;">
-            <h1 id="time-game" class="text-white"></h1>
+            <h1 id="time-game" class="text-white">Time: </h1>
         </div>
 
         <!-- tip -->
-        <div class="col text-center" style="margin-left: 5px;">
+        <div ng-app="refresh-div" ng-controller="refresh-control" class="col text-center" style="margin-left: 5px;">
             <h3 class="text-white tip-global-cards"></h3>
         </div>
 
@@ -27,9 +27,11 @@
 
         <!-- score -->
         <div class="col align-self-start" style="margin-left: 5px;">
-            <div class="row"> 
-                <h3 class="text-white">Score: 0</h3>
-            </div>
+            <button id="playTime" tabindex="289" class="btn btn-danger" type="button"><i class="fas fa-play" style="color: white;"></i></button>
+            
+            <p></p>
+
+            <h3 id="divScore" class="text-white score-global-cards"></h3>
         </div>
 
         <!-- cards -->
@@ -51,11 +53,8 @@
 
         <!-- button next -->
         <div class="col text-end" style="margin-right: 5px;">
-            <button id="nextCard" routerLink="/homepage/singleplayer/global/2" tabindex="290" class="btn btn-danger" type="button"><i class="fas fa-chevron-right fa-3x" style="color: white;"></i></button>
+            <button id="nextCard" onclick="refresh()" routerLink="/homepage/singleplayer/global/#" tabindex="290" class="btn btn-danger" type="button"><i class="fas fa-chevron-right fa-3x" style="color: white;"></i></button>
         </div>
-        
-
-
         <p></p>
     </div>
 </div>

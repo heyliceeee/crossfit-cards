@@ -5,7 +5,6 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { RegisterComponent } from './register/register.component';
 import { SigninComponent } from './signin/signin.component';
 import { TrainingHomepageComponent } from './training-homepage/training-homepage.component';
-import { GlobalTraining2Component } from './global-training2/global-training2.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/homepage', pathMatch: 'full'},
@@ -13,8 +12,7 @@ const routes: Routes = [
   {path: 'login', component: SigninComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'homepage/singleplayer', component: TrainingHomepageComponent},
-  {path: 'homepage/singleplayer/global', component: GlobalTrainingComponent},
-  {path: 'homepage/singleplayer/global/2', component: GlobalTraining2Component}
+  {path: 'homepage/singleplayer/global', component: GlobalTrainingComponent}
 ];
 
 @NgModule({

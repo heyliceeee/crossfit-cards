@@ -10,7 +10,6 @@ import { RegisterComponent } from './register/register.component';
 import { TrainingHomepageComponent } from './training-homepage/training-homepage.component';
 import { GlobalTrainingComponent } from './global-training/global-training.component';
 import { HttpClientModule } from '@angular/common/http';
-import { GlobalTraining2Component } from './global-training2/global-training2.component'
 
 
 @NgModule({
@@ -22,8 +21,7 @@ import { GlobalTraining2Component } from './global-training2/global-training2.co
     SigninComponent,
     RegisterComponent,
     TrainingHomepageComponent,
-    GlobalTrainingComponent,
-    GlobalTraining2Component
+    GlobalTrainingComponent
   ],
   imports: [
     BrowserModule,

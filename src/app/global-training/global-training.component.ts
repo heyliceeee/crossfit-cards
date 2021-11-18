@@ -5,19 +5,18 @@ import { CardTip } from './cards'
 import { CARDGLOBAL } from './mocks';
 import { Timer } from 'easytimer.js';
 
-
 @Component({
   selector: 'app-global-training',
   templateUrl: './global-training.component.html',
   styleUrls: ['./global-training.component.css']
 })
 export class GlobalTrainingComponent implements OnInit {
-
+  
   cardTips: CardTip[] = [];
 
   ngOnInit(): void {
 
-    $(window).ready(function(){
+    $(window).ready(() =>{
 
       var path = '../assets/cards/',
 
@@ -31,8 +30,8 @@ export class GlobalTrainingComponent implements OnInit {
         '9clubs.png', '9diamond.png', '9heart.png', '9spades.png', 
         '10clubs.png', '10diamond.png', '10heart.png', '10spades.png', 
         'aclubs.png', 'adiamond.png', 'aheart.png', 'aspades.png',
-        'jackclub.png', 'jackdiamond.png', 'jackheart.png', 'jackspades.png', 
-        'kingclub.png', 'kingdiamond.png', 'kingheart.png', 'kingspades.png', 
+        'jackclubs.png', 'jackdiamond.png', 'jackheart.png', 'jackspades.png', 
+        'kingclubs.png', 'kingdiamond.png', 'kingheart.png', 'kingspades.png', 
         'queenclubs.png', 'queendiamond.png', 'queenheart.png', 'queenspades.png',
       ],
 
@@ -72,23 +71,33 @@ export class GlobalTrainingComponent implements OnInit {
 
       $('.image-global-cards').append("<img src='"+path+images[i]+"'>").hide().fadeIn(2000);
       $('.tip-global-cards').append("Tip: "+tips[i]);
+      $('.score-global-cards').append("Score: "+score[i]);
 
+      var countScore = 0;
+      countScore = countScore + score[i];
+
+      console.log(countScore);
 
       //time and time break
       const timerGame = new Timer();
 
-      timerGame.start();
+      $('#playTime').click(function (){
+        timerGame.start();
+      });
 
       timerGame.addEventListener('secondsUpdated', function (e) {
         $('#time-game').html('Time: ' + timerGame.getTimeValues().toString());
       });
 
+      timerGame.addEventListener('started', function (e) {
+        $('#time-game').html('Time: '+ timerGame.getTimeValues().toString());
+    });
 
       const timerBreak = new Timer();
 
       $('#play').click(function () {
-        timerBreak.start();
         timerGame.pause();
+        timerBreak.start();
 
         var resultTimerGame = timerGame.getTimeValues().toString();
         console.log(resultTimerGame);
@@ -112,20 +121,10 @@ export class GlobalTrainingComponent implements OnInit {
       });
       //end time and time break
 
-
       //when click nextCard button 
       $("#nextCard").click(function (){
-        timerGame.pause();
-        timerBreak.pause();
-        
-        var resultTimeGameNextCard = timerGame.getTimeValues().toString();
-        var resultTimeBreakNextCard = timerBreak.getTimeValues().toString(); 
-
-        console.log(resultTimeGameNextCard);
-        console.log(resultTimeBreakNextCard);
+        $('#divScore').load(location.href + "#divScore");
       });
-
-        
   });
   }
   
