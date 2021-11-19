@@ -1,10 +1,7 @@
-import { createDirectiveTypeParams } from '@angular/compiler/src/render3/view/compiler';
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import { CardTip } from './cards'
-import { CARDGLOBAL } from './mocks';
 import { Timer } from 'easytimer.js';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-global-training',
@@ -76,45 +73,45 @@ export class GlobalTrainingComponent implements OnInit {
 
       
       //time and time break
-      const timerGame = new Timer();
+      const globalTimerGame = new Timer();
 
-      $('#playTime').click(function (){
-        timerGame.start();
+      $('#globalPlayTime').click(function (){
+        globalTimerGame.start();
       });
 
-      timerGame.addEventListener('secondsUpdated', function (e) {
-        $('#time-game').html('Time: ' + timerGame.getTimeValues().toString());
+      globalTimerGame.addEventListener('secondsUpdated', function (e) {
+        $('#globalTimeGame').html('Time: ' + globalTimerGame.getTimeValues().toString());
       });
 
-      timerGame.addEventListener('started', function (e) {
-        $('#time-game').html('Time: '+ timerGame.getTimeValues().toString());
+      globalTimerGame.addEventListener('started', function (e) {
+        $('#globalTimeGame').html('Time: '+ globalTimerGame.getTimeValues().toString());
     });
 
-      const timerBreak = new Timer();
+      const globalTimerBreak = new Timer();
 
-      $('#play').click(function () {
-        timerGame.pause();
-        timerBreak.start();
+      $('#globalPlayBreak').click(function () {
+        globalTimerGame.pause();
+        globalTimerBreak.start();
 
-        var resultTimerGame = timerGame.getTimeValues().toString();
-        console.log(resultTimerGame);
+        var resultglobalTimerGame = globalTimerGame.getTimeValues().toString();
+        console.log(resultglobalTimerGame);
       });
 
 
-      $('#pause').click(function () {
-        timerBreak.pause();
-        timerGame.start();
+      $('#globalPauseBreak').click(function () {
+        globalTimerBreak.pause();
+        globalTimerGame.start();
 
-        var resultTimerBreak = timerBreak.getTimeValues().toString();
-        console.log(resultTimerBreak);
+        var resultglobalTimerBreak = globalTimerBreak.getTimeValues().toString();
+        console.log(resultglobalTimerBreak);
       });
 
-      timerBreak.addEventListener('secondsUpdated', function (e) {
-        $('#time-break').html(timerBreak.getTimeValues().toString());
+      globalTimerBreak.addEventListener('secondsUpdated', function (e) {
+        $('#globalTimeBreak').html(globalTimerBreak.getTimeValues().toString());
       });
   
-      timerBreak.addEventListener('started', function (e) {
-          $('#time-break').html(timerBreak.getTimeValues().toString());
+      globalTimerBreak.addEventListener('started', function (e) {
+        $('#globalTimeBreak').html(globalTimerBreak.getTimeValues().toString());
       });
       //end time and time break
 

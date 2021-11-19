@@ -10,6 +10,10 @@ import { RegisterComponent } from './register/register.component';
 import { TrainingHomepageComponent } from './training-homepage/training-homepage.component';
 import { GlobalTrainingComponent } from './global-training/global-training.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ThreeComponent } from './three/three.component';
+import { TwoComponent } from './two/two.component';
+import { OneComponent } from './one/one.component';
+import { GoComponent } from './go/go.component';
 
 
 @NgModule({
@@ -21,7 +25,11 @@ import { HttpClientModule } from '@angular/common/http';
     SigninComponent,
     RegisterComponent,
     TrainingHomepageComponent,
-    GlobalTrainingComponent
+    GlobalTrainingComponent,
+    ThreeComponent,
+    TwoComponent,
+    OneComponent,
+    GoComponent
   ],
   imports: [
     BrowserModule,
