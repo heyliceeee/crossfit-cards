@@ -14,6 +14,7 @@ import { ThreeComponent } from './three/three.component';
 import { TwoComponent } from './two/two.component';
 import { OneComponent } from './one/one.component';
 import { GoComponent } from './go/go.component';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { GoComponent } from './go/go.component';
     ThreeComponent,
     TwoComponent,
     OneComponent,
-    GoComponent
+    GoComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,

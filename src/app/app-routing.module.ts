@@ -9,7 +9,7 @@ import { ThreeComponent } from './three/three.component';
 import { TwoComponent } from './two/two.component';
 import { OneComponent } from './one/one.component';
 import { GoComponent } from './go/go.component';
-
+import { StatisticsComponent } from './statistics/statistics.component';
 
 
 const routes: Routes = [
@@ -22,7 +22,8 @@ const routes: Routes = [
   {path: 'homepage/singleplayer/3', component: ThreeComponent},
   {path: 'homepage/singleplayer/2', component: TwoComponent},
   {path: 'homepage/singleplayer/1', component: OneComponent},
-  {path: 'homepage/singleplayer/go', component: GoComponent}
+  {path: 'homepage/singleplayer/go', component: GoComponent},
+  {path: 'homepage/singleplayer/statistics', component: StatisticsComponent}
 ];
 
 @NgModule({

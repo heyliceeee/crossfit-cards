@@ -136,7 +136,7 @@ export class GlobalTrainingComponent implements OnInit {
           var n = parseInt(str_n);
 
           //tenho de colocar a ir para pagina de estatistica
-          window.location.href = "login";
+          window.location.href = "homepage/singleplayer/statistics";
 
         } else {
 
@@ -147,7 +147,7 @@ export class GlobalTrainingComponent implements OnInit {
           globalScore = ""+score[i];
         }
 
-        
+
         console.log("valor de n: "+n);
         localStorage.setItem("counterNextCard", str_n);
         console.log("Score: "+globalScore);

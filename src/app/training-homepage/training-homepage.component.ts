@@ -10,6 +10,9 @@ export class TrainingHomepageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $("#btnGlobal").click(function (){
+      window.location.href = "/homepage/singleplayer/3";
+    })
   }
 
 }

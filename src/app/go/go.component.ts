@@ -10,6 +10,11 @@ export class GoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(document).ready(function (){
+      window.setTimeout(function (){
+        window.location.href = "/homepage/singleplayer/global";   
+      }, 1000);
+    });
   }
 
 }
