@@ -4,6 +4,7 @@ import * as $ from 'jquery';
 import { CardTip } from './cards'
 import { CARDGLOBAL } from './mocks';
 import { Timer } from 'easytimer.js';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-global-training',
@@ -15,7 +16,7 @@ export class GlobalTrainingComponent implements OnInit {
   cardTips: CardTip[] = [];
 
   ngOnInit(): void {
-
+  
     $(window).ready(() =>{
 
       var path = '../assets/cards/',
@@ -73,11 +74,7 @@ export class GlobalTrainingComponent implements OnInit {
       $('.tip-global-cards').append("Tip: "+tips[i]);
       $('.score-global-cards').append("Score: "+score[i]);
 
-      var countScore = 0;
-      countScore = countScore + score[i];
-
-      console.log(countScore);
-
+      
       //time and time break
       const timerGame = new Timer();
 
@@ -121,8 +118,39 @@ export class GlobalTrainingComponent implements OnInit {
       });
       //end time and time break
 
+
       //when click nextCard button 
       $("#nextCard").click(function (){
+
+        var str_n = localStorage.getItem('counterNextCard');
+        
+        
+        if (str_n == null || str_n == "null") {
+
+          str_n = "0";
+          n = 0;
+
+          //tenho de colocar 52 uns
+        } else if (str_n == "011"){
+
+          var n = parseInt(str_n);
+
+          //tenho de colocar a ir para pagina de estatistica
+          window.location.href = "login";
+
+        } else {
+
+          var n = parseInt(str_n);
+          n++;
+          str_n = str_n + 1;
+        }
+        console.log(n);
+        localStorage.setItem("counterNextCard", str_n);
+
+        //reset localStorage
+        //localStorage.clear();
+
+
         $('#divScore').load(location.href + "#divScore");
       });
   });
