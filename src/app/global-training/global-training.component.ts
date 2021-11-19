@@ -116,39 +116,49 @@ export class GlobalTrainingComponent implements OnInit {
       //end time and time break
 
 
+
       //when click nextCard button 
       $("#nextCard").click(function (){
 
         var str_n = localStorage.getItem('counterNextCard');
-        
-        
+        var globalScore = localStorage.getItem('globalScore');
+
         if (str_n == null || str_n == "null") {
 
           str_n = "0";
           n = 0;
+          globalScore = "0";
 
           //tenho de colocar 52 uns
-        } else if (str_n == "011"){
+        } else if (str_n == "11111111111111111111111111111111111111111111111111112"){
 
           var n = parseInt(str_n);
 
           //tenho de colocar a ir para pagina de estatistica
           window.location.href = "login";
 
-        } else {
+         } else {
 
           var n = parseInt(str_n);
           n++;
           str_n = str_n + 1;
+          globalScore = ""+score[i];
         }
-        console.log(n);
-        localStorage.setItem("counterNextCard", str_n);
 
+
+        console.log("valor de n: "+n);
+        localStorage.setItem("counterNextCard", str_n);
+        console.log("Score: "+globalScore);
+
+        
         //reset localStorage
         //localStorage.clear();
 
 
         $('#divScore').load(location.href + "#divScore");
+
+
+          $('.globalScoreCardsTest').append(""+globalScore);
       });
   });
   }
