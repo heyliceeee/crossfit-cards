@@ -33,6 +33,7 @@ import { TwoCardioComponent } from './two-cardio/two-cardio.component';
 import { OneCardioComponent } from './one-cardio/one-cardio.component';
 import { LegTrainingComponent } from './leg-training/leg-training.component';
 import { UpperBodyTrainingComponent } from './upper-body-training/upper-body-training.component';
+import { CoreTrainingComponent } from './core-training/core-training.component';
 
 
 @NgModule({
@@ -67,7 +68,8 @@ import { UpperBodyTrainingComponent } from './upper-body-training/upper-body-tra
     TwoCardioComponent,
     OneCardioComponent,
     LegTrainingComponent,
-    UpperBodyTrainingComponent
+    UpperBodyTrainingComponent,
+    CoreTrainingComponent
   ],
   imports: [
     BrowserModule,
