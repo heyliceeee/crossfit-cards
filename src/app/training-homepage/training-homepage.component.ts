@@ -11,8 +11,9 @@ export class TrainingHomepageComponent implements OnInit {
 
   ngOnInit(): void {
     $("#btnGlobal").click(function (){
-      window.location.href = "/homepage/singleplayer/3";
+      window.setTimeout(function (){
+        window.location.href = "/homepage/singleplayer/3global";
+      }, 200);
     })
   }
-
 }

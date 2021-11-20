@@ -12,7 +12,7 @@ export class OneComponent implements OnInit {
   ngOnInit(): void {
     $(document).ready(function (){
       window.setTimeout(function (){
-        window.location.href = "/homepage/singleplayer/go";   
+        window.location.href = "/homepage/singleplayer/goglobal";   
       }, 1000);
     });
   }

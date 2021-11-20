@@ -13,7 +13,7 @@ export class ThreeComponent implements OnInit {
 
     $(document).ready(function (){
       window.setTimeout(function (){
-        window.location.href = "/homepage/singleplayer/2";   
+        window.location.href = "/homepage/singleplayer/2global";   
       }, 1000);
     });
   }

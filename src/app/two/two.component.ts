@@ -12,7 +12,7 @@ export class TwoComponent implements OnInit {
   ngOnInit(): void {
     $(document).ready(function (){
       window.setTimeout(function (){
-        window.location.href = "/homepage/singleplayer/1";   
+        window.location.href = "/homepage/singleplayer/1global";   
       }, 1000);
     });
   }

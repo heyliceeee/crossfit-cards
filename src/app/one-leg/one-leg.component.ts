@@ -1,0 +1,15 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-one-leg',
+  templateUrl: './one-leg.component.html',
+  styleUrls: ['./one-leg.component.css']
+})
+export class OneLegComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
