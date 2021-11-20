@@ -31,7 +31,7 @@ export class GlobalTrainingComponent implements OnInit {
         'jackclubs.png', 'jackdiamond.png', 'jackheart.png', 'jackspades.png', 
         'kingclubs.png', 'kingdiamond.png', 'kingheart.png', 'kingspades.png', 
         'queenclubs.png', 'queendiamond.png', 'queenheart.png', 'queenspades.png',
-      ],
+        'joker.png'],
 
       tips = ['squats 2 reps', 'jumping jacks 2 reps', 'sit-ups 2 reps', 'push up 2 reps',
         'squats 3 reps', 'jumping jacks 3 reps', 'sit-ups 3 reps', 'push up 3 reps',
@@ -46,7 +46,7 @@ export class GlobalTrainingComponent implements OnInit {
         'squats 11 reps', 'jumping jacks 11 reps', 'sit-ups 11 reps', 'push up 11 reps',
         'squats 13 reps', 'jumping jacks 13 reps', 'sit-ups 13 reps', 'push up 13 reps',
         'squats 12 reps', 'jumping jacks 12 reps', 'sit-ups 12 reps', 'push up 12 reps',
-      'last exercise 30 reps'],
+        'last exercise 30 reps'],
 
       score = [4, 4, 4, 4,
         6, 6, 6, 6, 

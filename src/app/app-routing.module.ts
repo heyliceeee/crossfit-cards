@@ -26,7 +26,7 @@ import { GoCardioComponent } from './go-cardio/go-cardio.component';
 import { ThreeCardioComponent } from './three-cardio/three-cardio.component';
 import { TwoCardioComponent } from './two-cardio/two-cardio.component';
 import { OneCardioComponent } from './one-cardio/one-cardio.component';
-
+import { LegTrainingComponent } from './leg-training/leg-training.component';
 
 
 const routes: Routes = [
@@ -35,7 +35,14 @@ const routes: Routes = [
   {path: 'login', component: SigninComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'homepage/singleplayer', component: TrainingHomepageComponent},
+
+
   {path: 'homepage/singleplayer/global', component: GlobalTrainingComponent},
+  {path: 'homepage/singleplayer/leg', component: LegTrainingComponent},
+  //{path: 'homepage/singleplayer/upperbody', component: UpperBodyTrainingComponent},
+  //{path: 'homepage/singleplayer/core', component: CoreTrainingComponent},
+  //{path: 'homepage/singleplayer/cardio', component: CardioTrainingComponent},
+
 
 
   {path: 'homepage/singleplayer/goglobal', component: GoComponent},
