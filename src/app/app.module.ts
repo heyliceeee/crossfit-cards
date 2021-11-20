@@ -31,6 +31,7 @@ import { GoCardioComponent } from './go-cardio/go-cardio.component';
 import { ThreeCardioComponent } from './three-cardio/three-cardio.component';
 import { TwoCardioComponent } from './two-cardio/two-cardio.component';
 import { OneCardioComponent } from './one-cardio/one-cardio.component';
+import { LegTrainingComponent } from './leg-training/leg-training.component';
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { OneCardioComponent } from './one-cardio/one-cardio.component';
     GoCardioComponent,
     ThreeCardioComponent,
     TwoCardioComponent,
-    OneCardioComponent
+    OneCardioComponent,
+    LegTrainingComponent
   ],
   imports: [
     BrowserModule,
