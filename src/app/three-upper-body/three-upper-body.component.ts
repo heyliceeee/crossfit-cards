@@ -10,6 +10,11 @@ export class ThreeUpperBodyComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(document).ready(function (){
+      window.setTimeout(function (){
+        window.location.href = "/homepage/singleplayer/2upperbody";   
+      }, 1000);
+    });
   }
 
 }

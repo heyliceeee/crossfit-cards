@@ -10,6 +10,11 @@ export class TwoLegComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(document).ready(function (){
+      window.setTimeout(function (){
+        window.location.href = "/homepage/singleplayer/1leg";   
+      }, 1000);
+    });
   }
 
 }

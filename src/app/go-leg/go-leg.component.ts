@@ -10,6 +10,11 @@ export class GoLegComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(document).ready(function (){
+      window.setTimeout(function (){
+        window.location.href = "/homepage/singleplayer/leg";   
+      }, 1000);
+    });
   }
 
 }

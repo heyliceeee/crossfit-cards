@@ -10,6 +10,11 @@ export class GoCardioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(document).ready(function (){
+      window.setTimeout(function (){
+        window.location.href = "/homepage/singleplayer/cardio";   
+      }, 1000);
+    });
   }
 
 }

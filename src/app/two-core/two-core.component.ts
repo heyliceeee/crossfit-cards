@@ -10,6 +10,11 @@ export class TwoCoreComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(document).ready(function (){
+      window.setTimeout(function (){
+        window.location.href = "/homepage/singleplayer/1core";   
+      }, 1000);
+    });
   }
 
 }

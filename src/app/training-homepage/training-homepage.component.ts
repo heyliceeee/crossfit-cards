@@ -15,5 +15,33 @@ export class TrainingHomepageComponent implements OnInit {
         window.location.href = "/homepage/singleplayer/3global";
       }, 200);
     })
+
+
+    $("#btnLeg").click(function (){
+      window.setTimeout(function (){
+        window.location.href = "/homepage/singleplayer/3leg";
+      }, 200);
+    })
+
+
+    $("#btnUpperBody").click(function (){
+      window.setTimeout(function (){
+        window.location.href = "/homepage/singleplayer/3upperbody";
+      }, 200);
+    })
+
+
+    $("#btnCore").click(function (){
+      window.setTimeout(function (){
+        window.location.href = "/homepage/singleplayer/3core";
+      }, 200);
+    })
+
+
+    $("#btnCardio").click(function (){
+      window.setTimeout(function (){
+        window.location.href = "/homepage/singleplayer/3cardio";
+      }, 200);
+    })
   }
 }

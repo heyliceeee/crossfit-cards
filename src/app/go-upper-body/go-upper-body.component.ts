@@ -10,6 +10,11 @@ export class GoUpperBodyComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(document).ready(function (){
+      window.setTimeout(function (){
+        window.location.href = "/homepage/singleplayer/upperbody";   
+      }, 1000);
+    });
   }
 
 }

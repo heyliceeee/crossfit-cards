@@ -10,6 +10,11 @@ export class GoCoreComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(document).ready(function (){
+      window.setTimeout(function (){
+        window.location.href = "/homepage/singleplayer/core";   
+      }, 1000);
+    });
   }
 
 }
