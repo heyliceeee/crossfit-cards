@@ -131,14 +131,14 @@ export class GlobalTrainingComponent implements OnInit {
           
 
           //tenho de colocar 52 uns
-        } else if (str_n == "0111"){
+        /* } else if (str_n == "0111"){
 
           var n = parseInt(str_n);
 
           //tenho de colocar a ir para pagina de estatistica
           window.location.href = "homepage/singleplayer/statistics";
 
-        } else {
+        */}  else {
 
           var n = parseInt(str_n);
           n++;
