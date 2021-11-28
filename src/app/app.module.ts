@@ -35,7 +35,7 @@ import { LegTrainingComponent } from './leg-training/leg-training.component';
 import { UpperBodyTrainingComponent } from './upper-body-training/upper-body-training.component';
 import { CoreTrainingComponent } from './core-training/core-training.component';
 import { CardioTrainingComponent } from './cardio-training/cardio-training.component';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -76,7 +76,8 @@ import { CardioTrainingComponent } from './cardio-training/cardio-training.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
