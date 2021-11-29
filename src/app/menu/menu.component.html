@@ -31,8 +31,9 @@
         <button tabindex="19" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
             aria-label="Close"></button>
     </div>
- 
-    <button tabindex="20" style="font-size: 120%;" class="btn btn-lg btn-outline-primary options dropdown-item" (click)="open(mymodal)">Options</button>
+
+    <button tabindex="20" style="font-size: 120%;" class="btn btn-lg btn-outline-primary options dropdown-item"
+        (click)="open(mymodal)">Options</button>
     <div class="row justify-content-between" style="margin-left: 15px; margin-right: 15px;">
 
         <div class="dropdown-divider"></div>
@@ -76,9 +77,6 @@
 <ng-template #mymodal let-modal>
     <div class="modal-header">
         <h4 class="modal-title" id="modal-basic-title">Game Option Menu</h4>
-        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-            <span aria-hidden="true">×</span>
-        </button>
     </div>
     <div>
         <label for="customRange1" class="form-label">Sound</label>
@@ -90,9 +88,18 @@
             Animations
         </label>
     </div>
-    <div style="align:center" class="custom-control custom-switch">
-        <input type="checkbox" class="custom-control-input" id="customSwitches">
-        <label class="custom-control-label" for="customSwitches">Card Animations</label>
+    <div class="custom-control custom-switch">
+       
+           <div class="row" >
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+                <p>Card Animations</p>
+            </label>
+          
+           </div>
+           
+      
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
