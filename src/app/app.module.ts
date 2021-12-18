@@ -37,6 +37,7 @@ import { CoreTrainingComponent } from './core-training/core-training.component';
 import { CardioTrainingComponent } from './cardio-training/cardio-training.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
+
 @NgModule({
   declarations: [
     AppComponent,

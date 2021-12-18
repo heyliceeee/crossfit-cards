@@ -1,9 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <!-- button menu -->
-        <button tabindex="1" class="btn btn-danger" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="fas fa-bars"></i>
-            Menu</button>
+        <button tabindex="1" class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="fas fa-bars"></i> Menu</button>
 
         <!-- title "CrossFit Cards" -->
         <a class="navbar-brand" routerLink="homepage">CrossFit Cards</a>
@@ -32,76 +30,59 @@
             aria-label="Close"></button>
     </div>
 
-    <button tabindex="20" style="font-size: 120%;" class="btn btn-lg btn-outline-primary options dropdown-item"
-        (click)="open(mymodal)">Options</button>
-    <div class="row justify-content-between" style="margin-left: 15px; margin-right: 15px;">
+    
+    <div class="row justify-content-between" style="margin-left: 15px; margin-right: 15px;">    
+
+        <button tabindex="20" style="font-size: 120%;" class="btn btn-lg btn-outline-primary options dropdown-item"
+        (click)="open(mymodal)"><i
+        class="fas fa-cog"></i> Options</button>
 
         <div class="dropdown-divider"></div>
 
-        <div tabindex="30" class="dropdown-item" routerLink="/homepage/singleplayer" style="font-size: 120%;"><i
-                class="fas fa-user"></i> SinglePlayer</div>
-        <div tabindex="30" class="dropdown-item" routerLink="/homepage/singleplayer/global" style="font-size: 120%;"><i
-                class="fas fa-globe-americas"></i> Global</div>
-        <div tabindex="30" class="dropdown-item" routerLink="/homepage/singleplayer/#" style="font-size: 120%;"><img
-                src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/20/000000/external-leg-health-vitaliy-gorbachev-fill-vitaly-gorbachev.png" />
-            Leg</div>
-        <div tabindex="30" class="dropdown-item" routerLink="/homepage/singleplayer/#" style="font-size: 120%;"><img
-                src="https://img.icons8.com/ios-filled/20/000000/torso.png" /> Upper Body</div>
-        <div tabindex="30" class="dropdown-item" routerLink="/homepage/singleplayer/#" style="font-size: 120%;"><img
-                src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/20/000000/external-fitness-healthy-kiranshastry-solid-kiranshastry-1.png" /><img
-                src="https://img.icons8.com/ios-filled/20/000000/female-back.png" /> Core</div>
-        <div tabindex="30" class="dropdown-item" routerLink="/homepage/singleplayer/#" style="font-size: 120%;"><i
-                class="fas fa-heartbeat"></i> Cardio</div>
+        <div tabindex="30" class="dropdown-item" routerLink="/homepage/singleplayer" style="font-size: 120%;"><i class="fas fa-user"></i> SinglePlayer</div>
+        <div tabindex="40" class="dropdown-item" routerLink="/homepage/singleplayer/3global" style="font-size: 120%;"><i class="fas fa-globe-americas"></i> Global</div>
+        <div tabindex="41" class="dropdown-item" routerLink="/homepage/singleplayer/3leg" style="font-size: 120%;"><img src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/20/000000/external-leg-health-vitaliy-gorbachev-fill-vitaly-gorbachev.png" /> Leg</div>
+        <div tabindex="42" class="dropdown-item" routerLink="/homepage/singleplayer/3upperbody" style="font-size: 120%;"><img src="https://img.icons8.com/ios-filled/20/000000/torso.png" /> Upper Body</div>
+        <div tabindex="43" class="dropdown-item" routerLink="/homepage/singleplayer/3core" style="font-size: 120%;"><img src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/20/000000/external-fitness-healthy-kiranshastry-solid-kiranshastry-1.png" /><img src="https://img.icons8.com/ios-filled/20/000000/female-back.png" /> Core</div>
+        <div tabindex="44" class="dropdown-item" routerLink="/homepage/singleplayer/3cardio" style="font-size: 120%;"><i class="fas fa-heartbeat"></i> Cardio</div>
 
         <!-- <div tabindex="40" class="dropdown-item" href="#" style="font-size: 120%;"><i class="fas fa-users"></i> MultiPlayer</div> -->
 
         <div class="dropdown-divider"></div>
 
-        <div tabindex="50" class="dropdown-item" href="#" style="font-size: 120%;"><i class="far fa-chart-bar"></i>
-            Statistics</div>
+        <div tabindex="50" class="dropdown-item" href="/homepage/statistics" style="font-size: 120%;"><i class="far fa-chart-bar"></i> Statistics</div>
 
         <div class="dropdown-divider"></div>
 
-        <div tabindex="60" class="dropdown-item" href="#" style="font-size: 120%;"><i class="fas fa-question"></i>
-            Instructions</div>
+        <div tabindex="60" class="dropdown-item" href="/homepage/instructions" style="font-size: 120%;"><i class="fas fa-question"></i> Instructions</div>
 
         <div class="dropdown-divider"></div>
 
-        <div tabindex="70" class="dropdown-item" href="#" style="font-size: 120%;"><i class="fas fa-info"></i> About
-        </div>
+        <div tabindex="70" class="dropdown-item" href="/homepage/about" style="font-size: 120%;"><i class="fas fa-info"></i> About</div>
 
         <div class="dropdown-divider"></div>
     </div>
 </div>
 
+
 <ng-template #mymodal let-modal>
     <div class="modal-header">
-        <h4 class="modal-title" id="modal-basic-title">Game Option Menu</h4>
+        <h4 class="modal-title" id="modal-basic-title">Options</h4>
+        <button tabindex="21" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
     </div>
-    <div>
-        <label for="customRange1" class="form-label">Sound</label>
-        <input type="range" class="form-range" id="customRange1">
+    <div style="margin: 17px;">
+        <label for="customRange2" class="form-label">Sound</label>
+        <input tabindex="22" type="range" class="form-range" min="0" max="100" step="1" id="customRange2">
     </div>
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-            Animations
-        </label>
+    <div class="form-check form-switch" style="margin: 17px;">
+        <input tabindex="23" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1" checked>
+        <label class="form-check-label" for="flexSwitchCheckChecked1">Tips</label>
     </div>
-    <div class="custom-control custom-switch">
-       
-           <div class="row" >
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-                <p>Card Animations</p>
-            </label>
-          
-           </div>
-           
-      
+    <div class="form-check form-switch" style="margin: 17px;">
+        <input tabindex="24" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked2" disabled>
+        <label class="form-check-label" for="flexSwitchCheckChecked2">Animations (SOON)</label>
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
+        <button tabindex="25" type="button" class="btn btn-danger" (click)="modal.close('Save click')">Ok</button>
     </div>
 </ng-template>
