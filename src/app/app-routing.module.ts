@@ -30,6 +30,7 @@ import { LegTrainingComponent } from './leg-training/leg-training.component';
 import { UpperBodyTrainingComponent } from './upper-body-training/upper-body-training.component';
 import { CoreTrainingComponent } from './core-training/core-training.component';
 import { CardioTrainingComponent } from './cardio-training/cardio-training.component';
+import { InstructionsComponent } from './instructions/instructions.component';
 
 
 const routes: Routes = [
@@ -74,7 +75,8 @@ const routes: Routes = [
   {path: 'homepage/singleplayer/1cardio', component: OneCardioComponent},
 
 
-  {path: 'homepage/singleplayer/statistics', component: StatisticsComponent}
+  {path: 'homepage/statistics', component: StatisticsComponent},
+  {path: 'homepage/instructions', component: InstructionsComponent}
 ];
 
 @NgModule({

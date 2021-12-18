@@ -134,7 +134,7 @@ export class LegTrainingComponent implements OnInit {
           var n = parseInt(str_n);
 
           //tenho de colocar a ir para pagina de estatistica
-          window.location.href = "homepage/singleplayer/statistics";
+          window.location.href = "homepage/statistics";
 
         */}  else {
 
