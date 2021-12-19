@@ -1,17 +1,22 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <!-- button menu -->
-        <button tabindex="1" class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="fas fa-bars"></i> Menu</button>
+        <button tabindex="1" class="btn btn-danger" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i class="fas fa-bars"></i>
+            Menu</button>
 
         <!-- title "CrossFit Cards" -->
         <a class="navbar-brand" routerLink="homepage">CrossFit Cards</a>
 
         <!-- dropdown account -->
         <div class="dropdown">
-            <button tabindex="10" class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user"></i></button>
+            <button tabindex="10" class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user"></i></button>
             <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
-                <li><a tabindex="80" class="dropdown-item" routerLink="/login" routerLinkActive="router-link-active"><i class="fas fa-user-check"></i> Log In</a></li>
-                <li><a tabindex="90" class="dropdown-item" routerLink="/register"><i class="fas fa-user-plus"></i>Register</a></li>
+                <li><a tabindex="80" class="dropdown-item" routerLink="/login" routerLinkActive="router-link-active"><i
+                            class="fas fa-user-check"></i> Log In</a></li>
+                <li><a tabindex="90" class="dropdown-item" routerLink="/register"><i
+                            class="fas fa-user-plus"></i>Register</a></li>
             </ul>
         </div>
     </div>
@@ -23,46 +28,90 @@
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
         <h3 class="offcanvas-title" id="offcanvasExampleLabel" style="margin-left: 150px;">Menu</h3>
-        <button tabindex="19" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button tabindex="19" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
     </div>
 
-    
-    <div class="row justify-content-between" style="margin-left: 15px; margin-right: 15px;">    
 
-        <button tabindex="20" style="font-size: 120%;" class="btn btn-lg btn-outline-primary options dropdown-item" (click)="open(mymodal)"><i class="fas fa-cog"></i> Options</button>
+    <div class="row justify-content-between" style="margin-left: 15px; margin-right: 15px;">
+
+        <button tabindex="20" style="font-size: 120%;" class="btn btn-lg btn-outline-primary options dropdown-item"
+            (click)="open(mymodal)"><i class="fas fa-cog"></i> Options</button>
 
         <div class="dropdown-divider"></div>
 
-        <div tabindex="30" class="dropdown-item" routerLink="/homepage/singleplayer" style="font-size: 120%;"><i class="fas fa-user"></i> SinglePlayer</div>
-        <div tabindex="40" class="dropdown-item" routerLink="/homepage/singleplayer/3global" style="font-size: 120%;"><i class="fas fa-globe-americas"></i> Global</div>
-        <div tabindex="41" class="dropdown-item" routerLink="/homepage/singleplayer/3leg" style="font-size: 120%;"><img src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/20/000000/external-leg-health-vitaliy-gorbachev-fill-vitaly-gorbachev.png" /> Leg</div>
-        <div tabindex="42" class="dropdown-item" routerLink="/homepage/singleplayer/3upperbody" style="font-size: 120%;"><img src="https://img.icons8.com/ios-filled/20/000000/torso.png" /> Upper Body</div>
-        <div tabindex="43" class="dropdown-item" routerLink="/homepage/singleplayer/3core" style="font-size: 120%;"><img src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/20/000000/external-fitness-healthy-kiranshastry-solid-kiranshastry-1.png" /><img src="https://img.icons8.com/ios-filled/20/000000/female-back.png" /> Core</div>
-        <div tabindex="44" class="dropdown-item" routerLink="/homepage/singleplayer/3cardio" style="font-size: 120%;"><i class="fas fa-heartbeat"></i> Cardio</div>
+        <div tabindex="30" class="dropdown-item" routerLink="/homepage/singleplayer" style="font-size: 120%;"><i
+                class="fas fa-user"></i> SinglePlayer</div>
+        <div tabindex="40" class="dropdown-item" routerLink="/homepage/singleplayer/3global" style="font-size: 120%;"><i
+                class="fas fa-globe-americas"></i> Global</div>
+        <div tabindex="41" class="dropdown-item" routerLink="/homepage/singleplayer/3leg" style="font-size: 120%;"><img
+                src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/20/000000/external-leg-health-vitaliy-gorbachev-fill-vitaly-gorbachev.png" />
+            Leg</div>
+        <div tabindex="42" class="dropdown-item" routerLink="/homepage/singleplayer/3upperbody"
+            style="font-size: 120%;"><img src="https://img.icons8.com/ios-filled/20/000000/torso.png" /> Upper Body
+        </div>
+        <div tabindex="43" class="dropdown-item" routerLink="/homepage/singleplayer/3core" style="font-size: 120%;"><img
+                src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/20/000000/external-fitness-healthy-kiranshastry-solid-kiranshastry-1.png" /><img
+                src="https://img.icons8.com/ios-filled/20/000000/female-back.png" /> Core</div>
+        <div tabindex="44" class="dropdown-item" routerLink="/homepage/singleplayer/3cardio" style="font-size: 120%;"><i
+                class="fas fa-heartbeat"></i> Cardio</div>
 
         <!-- <div tabindex="40" class="dropdown-item" routerLink="#" style="font-size: 120%;"><i class="fas fa-users"></i> MultiPlayer</div> -->
 
         <div class="dropdown-divider"></div>
 
-        <div tabindex="50" class="dropdown-item" routerLink="/homepage/statistics" style="font-size: 120%;"><i class="far fa-chart-bar"></i> Statistics</div>
+        <div tabindex="50" class="dropdown-item" routerLink="/homepage/statistics" style="font-size: 120%;"><i
+                class="far fa-chart-bar"></i> Statistics</div>
 
         <div class="dropdown-divider"></div>
 
-        <div tabindex="60" class="dropdown-item" routerLink="/homepage/instructions" style="font-size: 120%;"><i class="fas fa-question"></i> Instructions</div>
+        <div tabindex="60" class="dropdown-item" routerLink="/homepage/instructions" style="font-size: 120%;"><i
+                class="fas fa-question"></i> Instructions</div>
 
         <div class="dropdown-divider"></div>
 
-        <div tabindex="70" class="dropdown-item" routerLink="/homepage/about" style="font-size: 120%;"><i class="fas fa-info"></i> About</div>
+        <div tabindex="70" class="dropdown-item" (click)="open(modalAbout)" style="font-size: 120%;"><i
+                class="fas fa-info"></i> About</div>
 
         <div class="dropdown-divider"></div>
     </div>
 </div>
 
 
+<ng-template #modalAbout let-modal>
+    <div class="modal-header">
+        <h3 class="modal-title w-100 text-center" id="modal-basic-title">About</h3>
+        <button tabindex="21" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
+            (click)="modal.dismiss('Cross click')"></button>
+    </div>
+
+    <h5 style="margin: 15px;">Version 2.11.12160.0</h5>
+
+    <div tabindex="#" class="dropdown-item" style="font-size: 120%;"><i class="fas fa-lock"></i> Privacy Statement
+    </div>
+
+    <div tabindex="#" class="dropdown-item" style="font-size: 120%;"><i class="fas fa-file-alt"></i> Advertising
+        Statement
+    </div>
+
+    <div tabindex="#" class="dropdown-item" style="font-size: 120%;"><i class="fas fa-file-alt"></i> Terms of Use
+    </div>
+
+    <div tabindex="#" class="dropdown-item" style="font-size: 120%;"><i class="fas fa-shopping-basket"></i> Product Page
+    </div>
+
+
+
+    <div class="modal-footer">
+        <button tabindex="25" type="button" class="btn btn-danger" (click)="modal.close('Save click')">Ok</button>
+    </div>
+</ng-template>
+
 <ng-template #mymodal let-modal>
     <div class="modal-header">
         <h3 class="modal-title w-100 text-center" id="modal-basic-title">Options</h3>
-        <button tabindex="21" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+        <button tabindex="21" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
+            (click)="modal.dismiss('Cross click')"></button>
     </div>
     <div style="margin: 17px;">
         <label for="customRange2" class="form-label">Sound</label>
