@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'app-statistics',
@@ -8,8 +10,8 @@ import { Chart } from 'chart.js';
 })
 export class StatisticsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private modalService: NgbModal) { }
+  closeResult: string = '';
   ngOnInit(): void {
 
     const trainingLineChart = new Chart("trainingLineChart", {
@@ -71,6 +73,24 @@ export class StatisticsComponent implements OnInit {
         }],
       }
     });
+  }
+
+  open(content: any) {
+    this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
+
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return `with: ${reason}`;
+    }
   }
 }
 
