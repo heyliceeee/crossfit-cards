@@ -31,52 +31,54 @@ import { UpperBodyTrainingComponent } from './upper-body-training/upper-body-tra
 import { CoreTrainingComponent } from './core-training/core-training.component';
 import { CardioTrainingComponent } from './cardio-training/cardio-training.component';
 import { InstructionsComponent } from './instructions/instructions.component';
+import { StatisticsAfterGameComponent } from './statistics-after-game/statistics-after-game.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/homepage', pathMatch: 'full'},
-  {path: 'homepage', component: HomepageComponent},
-  {path: 'login', component: SigninComponent},
-  {path: 'register', component: RegisterComponent},
-  {path: 'homepage/singleplayer', component: TrainingHomepageComponent},
+  { path: '', redirectTo: '/homepage', pathMatch: 'full' },
+  { path: 'homepage', component: HomepageComponent },
+  { path: 'login', component: SigninComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'homepage/singleplayer', component: TrainingHomepageComponent },
 
 
-  {path: 'homepage/singleplayer/global', component: GlobalTrainingComponent},
-  {path: 'homepage/singleplayer/leg', component: LegTrainingComponent},
-  {path: 'homepage/singleplayer/upperbody', component: UpperBodyTrainingComponent},
-  {path: 'homepage/singleplayer/core', component: CoreTrainingComponent},
-  {path: 'homepage/singleplayer/cardio', component: CardioTrainingComponent},
+  { path: 'homepage/singleplayer/global', component: GlobalTrainingComponent },
+  { path: 'homepage/singleplayer/leg', component: LegTrainingComponent },
+  { path: 'homepage/singleplayer/upperbody', component: UpperBodyTrainingComponent },
+  { path: 'homepage/singleplayer/core', component: CoreTrainingComponent },
+  { path: 'homepage/singleplayer/cardio', component: CardioTrainingComponent },
 
 
 
-  {path: 'homepage/singleplayer/goglobal', component: GoComponent},
-  {path: 'homepage/singleplayer/3global', component: ThreeComponent},
-  {path: 'homepage/singleplayer/2global', component: TwoComponent},
-  {path: 'homepage/singleplayer/1global', component: OneComponent},
+  { path: 'homepage/singleplayer/goglobal', component: GoComponent },
+  { path: 'homepage/singleplayer/3global', component: ThreeComponent },
+  { path: 'homepage/singleplayer/2global', component: TwoComponent },
+  { path: 'homepage/singleplayer/1global', component: OneComponent },
 
-  {path: 'homepage/singleplayer/goleg', component: GoLegComponent},
-  {path: 'homepage/singleplayer/3leg', component: ThreeLegComponent},
-  {path: 'homepage/singleplayer/2leg', component: TwoLegComponent},
-  {path: 'homepage/singleplayer/1leg', component: OneLegComponent},
+  { path: 'homepage/singleplayer/goleg', component: GoLegComponent },
+  { path: 'homepage/singleplayer/3leg', component: ThreeLegComponent },
+  { path: 'homepage/singleplayer/2leg', component: TwoLegComponent },
+  { path: 'homepage/singleplayer/1leg', component: OneLegComponent },
+  { path: 'homepage/singleplayer/leg/statistics', component: StatisticsAfterGameComponent },
 
-  {path: 'homepage/singleplayer/goupperbody', component: GoUpperBodyComponent},
-  {path: 'homepage/singleplayer/3upperbody', component: ThreeUpperBodyComponent},
-  {path: 'homepage/singleplayer/2upperbody', component: TwoUpperBodyComponent},
-  {path: 'homepage/singleplayer/1upperbody', component: OneUpperBodyComponent},
+  { path: 'homepage/singleplayer/goupperbody', component: GoUpperBodyComponent },
+  { path: 'homepage/singleplayer/3upperbody', component: ThreeUpperBodyComponent },
+  { path: 'homepage/singleplayer/2upperbody', component: TwoUpperBodyComponent },
+  { path: 'homepage/singleplayer/1upperbody', component: OneUpperBodyComponent },
 
-  {path: 'homepage/singleplayer/gocore', component: GoCoreComponent},
-  {path: 'homepage/singleplayer/3core', component: ThreeCoreComponent},
-  {path: 'homepage/singleplayer/2core', component: TwoCoreComponent},
-  {path: 'homepage/singleplayer/1core', component: OneCoreComponent},
+  { path: 'homepage/singleplayer/gocore', component: GoCoreComponent },
+  { path: 'homepage/singleplayer/3core', component: ThreeCoreComponent },
+  { path: 'homepage/singleplayer/2core', component: TwoCoreComponent },
+  { path: 'homepage/singleplayer/1core', component: OneCoreComponent },
 
-  {path: 'homepage/singleplayer/gocardio', component: GoCardioComponent},
-  {path: 'homepage/singleplayer/3cardio', component: ThreeCardioComponent},
-  {path: 'homepage/singleplayer/2cardio', component: TwoCardioComponent},
-  {path: 'homepage/singleplayer/1cardio', component: OneCardioComponent},
+  { path: 'homepage/singleplayer/gocardio', component: GoCardioComponent },
+  { path: 'homepage/singleplayer/3cardio', component: ThreeCardioComponent },
+  { path: 'homepage/singleplayer/2cardio', component: TwoCardioComponent },
+  { path: 'homepage/singleplayer/1cardio', component: OneCardioComponent },
 
 
-  {path: 'homepage/statistics', component: StatisticsComponent},
-  {path: 'homepage/instructions', component: InstructionsComponent}
+  { path: 'homepage/statistics', component: StatisticsComponent },
+  { path: 'homepage/instructions', component: InstructionsComponent }
 ];
 
 @NgModule({
