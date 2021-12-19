@@ -37,6 +37,7 @@ import { CoreTrainingComponent } from './core-training/core-training.component';
 import { CardioTrainingComponent } from './cardio-training/cardio-training.component';
 import { NgbDate, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { InstructionsComponent } from './instructions/instructions.component';
+import { StatisticsAfterGameComponent } from './statistics-after-game/statistics-after-game.component';
 
 
 @NgModule({
@@ -74,7 +75,8 @@ import { InstructionsComponent } from './instructions/instructions.component';
     UpperBodyTrainingComponent,
     CoreTrainingComponent,
     CardioTrainingComponent,
-    InstructionsComponent
+    InstructionsComponent,
+    StatisticsAfterGameComponent
   ],
   imports: [
     BrowserModule,

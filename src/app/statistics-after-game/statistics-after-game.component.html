@@ -1,0 +1,325 @@
+<div class="container-fluid border" style="border-radius: 15px; background-color: #212529">
+
+    <div class="row">
+
+        <p></p>
+
+        <!-- title "Instruções" -->
+        <h2 class="text-white" style="margin-left: 15px;">Statistics</h2>
+    </div>
+
+    <div class="row justify-content-between" style="margin-left: 15px; margin-right: 15px;">
+        <p></p>
+
+        <div class="col-12">
+            <div class="row">
+                <button type="button" role="button" class="border btn btn-danger btn-lg"><i
+                        class="fas fa-user fa-1x"></i> SINGLEPLAYER</button>
+            </div>
+
+            <div class="row border">
+
+                <p></p>
+
+                <div class="col-2">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker
+                                    #d="ngbDatepicker">
+                                <div class="input-group-append">
+                                    <button tabindex="#" class="btn btn-danger dropdown-toggle" (click)="d.toggle()"
+                                        type="button"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-3"></div>
+
+                <div class="col-2">
+                    <div class="dropdown" style="text-align:center;">
+                        <button tabindex="#" class="btn btn-danger dropdown-toggle" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                class="fas fa-globe-americas"></i> Global</button>
+                        <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-right"
+                            aria-labelledby="dropdownMenuButton1">
+                            <li><a tabindex="#" class="dropdown-item" routerLink="#"
+                                    routerLinkActive="router-link-active"><i class="fas fa-globe-americas"></i>
+                                    Global</a></li>
+                            <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                        src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/20/000000/external-leg-health-vitaliy-gorbachev-fill-vitaly-gorbachev.png" />
+                                    Leg</a></li>
+                            <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                        src="https://img.icons8.com/ios-filled/20/000000/torso.png" /> Upper Body</a>
+                            </li>
+                            <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                        src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/20/000000/external-fitness-healthy-kiranshastry-solid-kiranshastry-1.png" /><img
+                                        src="https://img.icons8.com/ios-filled/20/000000/female-back.png" /> Core</a>
+                            </li>
+                            <li><a tabindex="#" class="dropdown-item" routerLink="#"><i class="fas fa-heartbeat"></i>
+                                    Cardio</a></li>
+                        </ul>
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-white" style="float: left;">Total Time: </h3>
+                            <h4 class="text-white" style="float: right;"> 7:48</h4>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-white" style="float: left;">Break Time: </h3>
+                            <h4 class="text-white" style="float: right;"> 1:30</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3"></div>
+
+                <div class="col-2">
+                    <div class="dropdown" style="text-align: right;">
+                        <button tabindex="#" class="btn btn-danger dropdown-toggle" type="button"
+                            id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"><img
+                                src="https://img.icons8.com/material/24/ffffff/clubs.png" /> 2 Clubs</button>
+
+                        <div class="dropdown-menu dropdown-multicol2" aria-labelledby="dropdownMenuButton2">
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"
+                                        routerLinkActive="router-link-active"><img
+                                            src="https://img.icons8.com/material/24/000000/clubs.png" /> 2 Clubs</a>
+                                </li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/diamonds.png" /> 2
+                                        Diamond</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/hearts--v1.png" /> 2
+                                        Heart</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/spades.png" /> 2 Spades</a>
+                                </li>
+                            </div>
+
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/clubs.png" /> 3 Clubs</a>
+                                </li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/diamonds.png" /> 3
+                                        Diamond</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/hearts--v1.png" /> 3
+                                        Heart</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/spades.png" /> 3 Spades</a>
+                                </li>
+                            </div>
+
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/clubs.png" /> 4 Clubs</a>
+                                </li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/diamonds.png" /> 4
+                                        Diamond</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/hearts--v1.png" /> 4
+                                        Heart</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/spades.png" /> 4 Spades</a>
+                                </li>
+                            </div>
+
+                            <div class="dropdown-divider"></div>
+
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/clubs.png" /> 5 Clubs</a>
+                                </li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/diamonds.png" /> 5
+                                        Diamond</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/hearts--v1.png" /> 5
+                                        Heart</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/spades.png" /> 5 Spades</a>
+                                </li>
+                            </div>
+
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/clubs.png" /> 6 Clubs</a>
+                                </li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/diamonds.png" /> 6
+                                        Diamond</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/hearts--v1.png" /> 6
+                                        Heart</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/spades.png" /> 6 Spades</a>
+                                </li>
+                            </div>
+
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/clubs.png" /> 7 Clubs</a>
+                                </li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/diamonds.png" /> 7
+                                        Diamond</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/hearts--v1.png" /> 7
+                                        Heart</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/spades.png" /> 7 Spades</a>
+                                </li>
+                            </div>
+
+                            <div class="dropdown-divider"></div>
+
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/clubs.png" /> 8 Clubs</a>
+                                </li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/diamonds.png" /> 8
+                                        Diamond</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/hearts--v1.png" /> 8
+                                        Heart</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/spades.png" /> 8 Spades</a>
+                                </li>
+                            </div>
+
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/clubs.png" /> 9 Clubs</a>
+                                </li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/diamonds.png" /> 9
+                                        Diamond</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/hearts--v1.png" /> 9
+                                        Heart</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/spades.png" /> 9 Spades</a>
+                                </li>
+                            </div>
+
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/clubs.png" /> 10 Clubs</a>
+                                </li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/diamonds.png" /> 10
+                                        Diamond</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/hearts--v1.png" /> 10
+                                        Heart</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/spades.png" /> 10 Spades</a>
+                                </li>
+                            </div>
+
+                            <div class="dropdown-divider"></div>
+
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/clubs.png" /> A Clubs</a>
+                                </li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/diamonds.png" /> A
+                                        Diamond</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/hearts--v1.png" /> A
+                                        Heart</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/spades.png" /> A Spades</a>
+                                </li>
+                            </div>
+
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/clubs.png" /> Jack
+                                        Clubs</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/diamonds.png" /> Jack
+                                        Diamond</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/hearts--v1.png" /> Jack
+                                        Heart</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/spades.png" /> Jack
+                                        Spades</a></li>
+                            </div>
+
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/clubs.png" /> King
+                                        Clubs</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/diamonds.png" /> King
+                                        Diamond</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/hearts--v1.png" /> King
+                                        Heart</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/spades.png" /> King
+                                        Spades</a></li>
+                            </div>
+
+                            <div class="dropdown-divider"></div>
+
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/clubs.png" /> Queen
+                                        Clubs</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/diamonds.png" /> Queen
+                                        Diamond</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/hearts--v1.png" /> Queen
+                                        Heart</a></li>
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/spades.png" /> Queen
+                                        Spades</a></li>
+                            </div>
+
+                            <div class="dropdown-col">
+                                <li><a tabindex="#" class="dropdown-item" routerLink="#"><img
+                                            src="https://img.icons8.com/material/24/000000/joker.png" /> Joker</a></li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-white" style="float: left;">Total Time: </h3>
+                            <h4 class="text-white" style="float: right;"> 1:00</h4>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-white" style="float: left;">Break Time: </h3>
+                            <h4 class="text-white" style="float: right;"> 0:30</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <p></p>
+</div>
