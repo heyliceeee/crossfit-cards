@@ -61,6 +61,11 @@
 
         <div class="dropdown-divider"></div>
 
+        <div tabindex="49" class="dropdown-item" (click)="open(modalCreateCards)" style="font-size: 120%;"><img
+                src="https://img.icons8.com/ios-filled/20/000000/cards.png" /> Create Deck of Cards</div>
+
+        <div class="dropdown-divider"></div>
+
         <div tabindex="50" class="dropdown-item" routerLink="/homepage/statistics" style="font-size: 120%;"><i
                 class="far fa-chart-bar"></i> Statistics</div>
 
@@ -78,6 +83,318 @@
     </div>
 </div>
 
+<ng-template #modalCreateCards let-modal>
+    <div class="modal-header">
+        <h3 class="modal-title w-100 text-center" id="modal-basic-title">Create Deck of Cards</h3>
+        <button tabindex="#" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
+            (click)="modal.dismiss('Cross click')"></button>
+    </div>
+
+    <form style="margin: 15px;" class="form-inline">
+        <div class="form-group">
+            <div class="input-group">
+                <input class="form-control" placeholder="Deck Name">
+                <div class="input-group-append">
+                    <button tabindex="10" class="btn btn-danger" type="button"><i class="fas fa-check"></i></button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <p></p>
+
+    <h5 style="margin: 15px;">Select cards</h5>
+
+    <div class="row" style="margin: 15px;">
+        <div class="col-12 border">
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">last exercise 30 reps</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin: 15px;">
+        <div class="col-5 border">
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">squats 2 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">squats 3 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">squats 4 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">squats 5 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">squats 6 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">squats 7 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">squats 8 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">squats 9 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">squats 10 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">squats 11 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">squats 12 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">squats 13 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">squats 20 reps</label>
+            </div>
+        </div>
+
+
+        <div class="col-7 border">
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">jumping jacks 2 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">jumping jacks 3 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">jumping jacks 4 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">jumping jacks 5 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">jumping jacks 6 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">jumping jacks 7 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">jumping jacks 8 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">jumping jacks 9 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">jumping jacks 10 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">jumping jacks 11 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">jumping jacks 12 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">jumping jacks 13 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">jumping jacks 20 reps</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin: 15px;">
+        <div class="col-5 border">
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">sit-ups 2 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">sit-ups 3 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">sit-ups 4 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">sit-ups 5 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">sit-ups 6 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">sit-ups 7 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">sit-ups 8 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">sit-ups 9 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">sit-ups 10 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">sit-ups 11 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">sit-ups 12 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">sit-ups 13 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">sit-ups 20 reps</label>
+            </div>
+        </div>
+
+
+        <div class="col-7 border">
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">push up 2 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">push up 3 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">push up 4 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">push up 5 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">push up 6 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">push up 7 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">push up 8 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">push up 9 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">push up 10 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">push up 11 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">push up 12 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">push up 13 reps</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input tabindex="#" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1">
+                <label class="form-check-label" for="flexSwitchCheckChecked1">push up 20 reps</label>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal-footer">
+        <button tabindex="25" type="button" class="btn btn-danger" (click)="modal.close('Save click')">Ok</button>
+    </div>
+</ng-template>
 
 <ng-template #modalAbout let-modal>
     <div class="modal-header">
