@@ -10,7 +10,9 @@ export class MenuComponent implements OnInit {
 
   constructor(private modalService: NgbModal) { }
   closeResult: string = '';
-  ngOnInit(): void { }
+  ngOnInit(): void {
+
+  }
 
   open(content: any) {
     this.modalService.open(content, { ariaLabelledBy: 'modal-basic-title' }).result.then((result) => {
