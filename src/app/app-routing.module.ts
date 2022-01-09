@@ -32,9 +32,11 @@ import { CoreTrainingComponent } from './core-training/core-training.component';
 import { CardioTrainingComponent } from './cardio-training/cardio-training.component';
 import { InstructionsComponent } from './instructions/instructions.component';
 import { StatisticsAfterGameComponent } from './statistics-after-game/statistics-after-game.component';
-
+import { TesteComponent } from './teste/teste.component';
 
 const routes: Routes = [
+  { path: 'teste', component: TesteComponent },
+
   { path: '', redirectTo: '/homepage', pathMatch: 'full' },
   { path: 'homepage', component: HomepageComponent },
   { path: 'login', component: SigninComponent },
