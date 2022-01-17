@@ -38,8 +38,6 @@ import { CardioTrainingComponent } from './cardio-training/cardio-training.compo
 import { NgbDate, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { InstructionsComponent } from './instructions/instructions.component';
 import { StatisticsAfterGameComponent } from './statistics-after-game/statistics-after-game.component';
-import { TesteComponent } from './teste/teste.component';
-
 
 @NgModule({
   declarations: [
@@ -77,8 +75,7 @@ import { TesteComponent } from './teste/teste.component';
     CoreTrainingComponent,
     CardioTrainingComponent,
     InstructionsComponent,
-    StatisticsAfterGameComponent,
-    TesteComponent
+    StatisticsAfterGameComponent
   ],
   imports: [
     BrowserModule,
