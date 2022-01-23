@@ -489,10 +489,14 @@
         <button tabindex="21" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
             (click)="modal.dismiss('Cross click')"></button>
     </div>
-    <div style="margin: 17px;">
-        <label for="customRange2" class="form-label">Sound</label>
-        <input tabindex="22" type="range" class="form-range" min="0" max="100" step="1" id="customRange2">
+    <div class="d-flex" style="margin: 17px;">
+        <i class="fas fa-volume-mute"></i>
+        <form class="range-field">
+            <input tabindex="22" type="range" class="border" min="0" max="100" step="1" id="customRange2">
+        </form>
+        <i class="fas fa-volume-up"></i>
     </div>
+
     <div class="form-check form-switch" style="margin: 17px;">
         <input tabindex="23" class="form-check-input" type="checkbox" value="" id="flexSwitchCheckChecked1" checked>
         <label class="form-check-label" for="flexSwitchCheckChecked1">Tips</label>
